@@ -1,4 +1,4 @@
-# JS-FundamentalsEnable desktop notifications for Gmail.
+# JS-Fundamentals
 # Software Runtime Engineer Roadmap
 *A roadmap toward becoming a systems-focused JavaScript/C++ engineer.*
 
