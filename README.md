@@ -555,7 +555,7 @@ Build a miniature JavaScript runtime and developer platform that demonstrates ma
 * TypeScript API design
 * Performance engineering
 
-The goal is not to recreate V8. The goal is to demonstrate that you understand the architecture behind systems like V8, Node.js, Electron, and Bloomberg's runtime infrastructure.
+The goal is not to recreate V8. The goal is to demonstrate that you understand the architecture behind systems like V8, Node.js, Electron.
 
 ---
 
