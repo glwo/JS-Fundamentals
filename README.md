@@ -863,22 +863,3 @@ glenjs/
 └── docs/
 ```
 
----
-
-# Why This Project Matters
-
-Completing this demonstrates:
-
-* "I understand JavaScript beyond frameworks."
-* "I can work across language boundaries."
-* "I understand runtime architecture."
-* "I can reason about performance."
-* "I can design developer platforms."
-
-This is the type of project that bridges the gap between:
-
-Software Engineer
-
-and
-
-Runtime / Infrastructure Engineer.
