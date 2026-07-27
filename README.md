@@ -24,7 +24,7 @@ Estimated Time:
 
 ## Objectives
 
-Become an expert JavaScript engineer—not just someone who writes React.
+Greatly increase my understanding of the language I work and live in.
 
 ## Learn
 
