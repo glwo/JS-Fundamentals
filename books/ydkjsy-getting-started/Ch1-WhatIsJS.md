@@ -30,4 +30,24 @@ older environment. (As you can imagine this is some of the most insane slop nons
 Is JS an Interpreted or Compiled language?:
 
 - Majority believe its a interpreted (scripting) language, but it's more complicated than that.
+- It is important to have a solid grasp on if JS is interpreted or compiled so you understand errors (and can handle them correctly)
+- Historically, scripted/interpreted languages were executed top down, causing syntax errors to fail entire programs during execution
+- Parsed languages go through a processing step (parsing) prior to execution, catching syntax errors and preventing partial execution
+- JS source code is parsed prior to execution.
+
+JS is a parsed language. Is it Compiled?
+
+- Answer is closer to yes than no (COPE!)
+- Parsed JS -> Binary -> execution (by JS virtual machine).
+- Real world ex:
+  - Leaves dev editor -> tranpiled by Babel -> packed by Webpack (and other build processes) -> delivered to JS engine
+  - JS engine parses the code to an AST (abstract syntax tree)
+  - Engine converts AST to byte code -> refined/converted even further by the optimizing JIT(Just In Time) compiler
+  - JS VM executes the program
+- That's the entire argument: "In spirit, if not in practice, JS is a compiled language".
+- "Since JS is compiled, we are informed of static errors before our code is executed"
+
+WASM (Web Assembly):
+
+- JS performance is constantly under scrutiny, when it comes to how quickly JS can be parsed/compiled and executed
 -
