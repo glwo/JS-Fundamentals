@@ -50,4 +50,19 @@ JS is a parsed language. Is it Compiled?
 WASM (Web Assembly):
 
 - JS performance is constantly under scrutiny, when it comes to how quickly JS can be parsed/compiled and executed
+- In 2013 mozilla devs were able to port unreal engine from c to js, running 60 fps, using a subset of js: ASM.js
+- ASM was introduced as a way to combat the decreasing runtime performance of JS, but never intended to be touched by devs
+- ASM was intended to be a representation of a program which was transpiled from another language eg C, including type annotations
+- ASM began the trend/belief that tooling-created versions of programs could be processed more efficiently by the JS engine
+- WASM came a few years later, with the same intent of converting non JS programs to run on the JS engine
+- Unlike ASM, WASM gets arouynd the delays of JS parsing/compilation by representing the program entirely different than JS
+- WASM is a representation format (like assembly) that allows the JS engine to skip the parsing/compilation step.
+- Other than performance, WASM also supports more parity for non-JS languages to the web. Supports/converts unsupported features in JS to run on the JS engine.
+- WASM relieves pressure to support features in JS that are mainly intended to be used by transpiled programs in other languages.
+- JS feature development can stay impartial to the opinions of other languages/communities, thanks to WASM.
+- WASM is evolving to become a cross platform virtual machine. (programs compiled once, run many places).`
+- "WASM won't replace JS, it simply augments what the web (+ JS) can accomplish".
+
+Strict Mode:
+
 -
