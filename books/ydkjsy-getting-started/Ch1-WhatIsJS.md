@@ -65,4 +65,17 @@ WASM (Web Assembly):
 
 Strict Mode:
 
--
+- Released in 2009, opt in mechanism to encourage better js progams
+- Better to be thought of as a guide to encourage the best code for the JS engine to efficiently run, rather than a set of restrictions
+- Mostly controls early errors, which are non syntax errors that are still thrown at compile time, eg naming two function parameters identically
+- Should treat strict mode like a linter, listen to it for the best chance of quality + performance
+- If you feel handcuffed by strict mode, your approach probably sucks, reconsider.
+- Can turn it on per file or per function with "use strict";, can't use both, pick file or function
+- Only use per function when you are converting a previous non strict mode file
+- Strict mode will never be the default due to JS backwards compatibility
+
+Summary:
+
+- JS is an implementation of ECMA script, guided by the TC39 committee and hosted by ECMA. Runs in browsers and envs (eg node)
+- JS is a multiparagigm language, devs can use syntax and capabilities of procedural, OO/classes, and functional programming
+- Js is a compiled language (yea for sure br0), meaning the tools process and verify a program prior to execution
