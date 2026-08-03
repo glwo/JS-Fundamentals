@@ -17,3 +17,39 @@ Arrays and Objects:
 - Arrays are types of objects which contain a list of values.
 - JS arrays can hold any value type (primitive or object).
 - Objects are more general: an unordered, keyed collection of any various values.
+- Can use the typeof operator to check the type of a value, tho typeof null incorrectly returns object.
+- let has a more limited access to the variable than var. This is called "Block scoping" rather than regular/function scoping
+- "Instead of avoiding var in favor of let or const, you should learn where to use var properly and apply it there instead"
+- const must be given a value when it is declared, and it cannot be reassigned later
+- You shouldn't use const with object values, bc object values can still be changed, despite the var not being reassigned.
+- Best and safest way to use const is to only use it with primitive values.
+
+Functions
+
+- In JS we consider "function" to take the broader meaning of a related term "procedure"
+- A procedure is a collection of statements that can be invoked one or more times, may be given multiple inputs, and provide multiple outputs.
+- Association of the identifier (myFunction) and the function value (code in function) happens during compilation, prior to execution
+- IMPORTANT: In JS functions are values that can be assigned and passed around.
+- JS functions are a special object value type.
+- Since functions are values they can be assigned as properties on objects (does literally anyone do this?)
+
+Comparisons
+
+- JS has several mechanisms to enable value comparison
+- We must be aware of the equality comparison vs the equivalence comparison
+- "===" often known as "strict equality" operator. Or described "checking both the vlaue and the type"
+- "===" lies in two instances
+  - NaN === Nan // false
+  - 0 === -0 // true
+- To work around these lies use Number.isNaN() or Object.is()
+- JS does not use === for structural equality for objects, instead === uses identity equality for object values.
+- JS does not provide a way to check structural equality of object values. If you want to do it, you'll need to build the checks urself.
+
+Coercive comparisons:
+
+- Coercion: A value of one type being converted to its respective representation of another type.
+- Coercion is a core principal of JS (slop), not some optional feature that can reasonably be avoided.
+- Coercion + comparison is slop central, with many normies complaining about it, esp around ==
+- Most discourse around "==" comes from a short list of corner cases.
+- "==" coerces types prior to checking for equality, should be described as "coercive equality" rather than "loose"
+-
