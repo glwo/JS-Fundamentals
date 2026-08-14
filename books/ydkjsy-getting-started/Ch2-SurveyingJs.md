@@ -37,7 +37,7 @@ Comparisons
 
 - JS has several mechanisms to enable value comparison
 - We must be aware of the equality comparison vs the equivalence comparison
-- "===" often known as "strict equality" operator. Or described "checking both the vlaue and the type"
+- "===" often known as "strict equality" operator. Or described "checking both the value and the type"
 - "===" lies in two instances
   - NaN === Nan // false
   - 0 === -0 // true
@@ -52,4 +52,21 @@ Coercive comparisons:
 - Coercion + comparison is slop central, with many normies complaining about it, esp around ==
 - Most discourse around "==" comes from a short list of corner cases.
 - "==" coerces types prior to checking for equality, should be described as "coercive equality" rather than "loose"
+- This gets tricky when using number operators (<, >, etc). Since these also coerce types similar to ==
+
+How We Orgnanize JS:
+
+- JS is organized by two paradigms: Classes and modules. It is imperative you know both of them.
+
+Classes:
+
+- We will use a very traditional definition of class. Similar to what you would expect in OOP langs like C++ or Java.
+- A class in a program is a definition of a "type" of custom data structure that includes both data and behaviors that operate on that data.
+- Classes themselves are not concrete, if you want a concrete value, you need to instantiate a class with the "new" keyword.
+
+Class Inheritance:
+
+- Common to "class-oriented" design, not super common in JS is "Inheritance" and "polymorphism"
+- Can use the "extends" keyword to create a child class with additional behavior.
+- Both inherited and overridden methods can have the same name and coexist: concept known as polymorphism.
 -
