@@ -69,4 +69,11 @@ Class Inheritance:
 - Common to "class-oriented" design, not super common in JS is "Inheritance" and "polymorphism"
 - Can use the "extends" keyword to create a child class with additional behavior.
 - Both inherited and overridden methods can have the same name and coexist: concept known as polymorphism.
--
+- Powerful; can organize sata/behavior while allowing the childe to cooperate with the parent
+
+Modules:
+
+- Similar to classes in that they group data and behavior into logical units. Tho they have entirely different syntax.
+- This is what we use at work, and probably the majority of JS programs out there
+- Instead of methods and data being stored on an instance, and accessed with the "this" keyword, we simply use variables instead.
+- Sometimes the only observable difference will be the lack of using "new", can call the modules as functions.
