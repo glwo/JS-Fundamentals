@@ -31,3 +31,7 @@ So Many Function Forms:
   - "Not a fan of anon functions, for that reason I don't think u should use arrow functions frequently"
   - "This kind of function has a specific purpose (ie: handling the `this` keyword)"
 - No easy way out, you have to build familiarity with all function forms and their use cases.
+
+Coercive Conditional Comparison
+
+- Conditional expressions often have to make coercion-oriented comparisons to make their decisions
