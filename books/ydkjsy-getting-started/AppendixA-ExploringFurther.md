@@ -35,3 +35,29 @@ So Many Function Forms:
 Coercive Conditional Comparison
 
 - Conditional expressions often have to make coercion-oriented comparisons to make their decisions
+- `if` and `? :` ternary statemets as well as branches in for/while loops, all perform implicit value comparison
+- Both strict and coercive comparisons occur, coerce the input value to the expected usually.
+- Can't escpare coercions, buckle down and learn them.
+
+Protypal Classes:
+
+- Not often used in code but very often asked during interviews.
+- Predecessor to ES6 Class system, another way of wiring up prototypal linkages.
+- Ex:
+  `
+  function Classroom() {
+  ...
+  }
+
+Classroom.prototype.welcome = function hello() {
+console.log("Welcome, students!")
+};
+
+var mathClass = new Classroom();
+
+mathClass.welcome();
+`
+
+- All functions by default reference an empty object at a property named `prototype`
+  - this is NOT the function's prototype (where the function is prototype linked to)
+  - This is instead the prototype object to link to when other objects are created by calling the function with `new`
