@@ -56,6 +56,7 @@ console.log("Welcome, students!")
 var mathClass = new Classroom();
 
 mathClass.welcome();
+// Welcome, students!
 `
 
 - All functions by default reference an empty object at a property named `prototype`
