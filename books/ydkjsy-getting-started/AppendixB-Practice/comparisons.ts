@@ -55,7 +55,7 @@ scheduleMeeting("18:00", 15); // false
 
 // Suggested solution
 
-function scheduleMeeting(startTime, endTime) {
+function scheduleMeeting(startTime, durationMinutes) {
   var [, meetingStartHour, meetingStartMinutes] = startTime.match(/^(\d(1.2}):(\d{2})$/) || [];
 
   durationMinutes = Number(durationMinutes);
