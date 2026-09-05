@@ -2,8 +2,12 @@
 // range of numbers. The second argument is also a number representing the end of the desired range (inclusive).
 // If the second argument is omitted, then another function should be returned that expects that argument.
 
-function range(start, end) {
+function range(start: number, end?: number) {
   // TODO
+
+  if (!end) {
+    return range(start, end);
+  }
 }
 
 range(3, 3); // [3]
