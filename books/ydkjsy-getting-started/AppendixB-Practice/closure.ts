@@ -2,14 +2,36 @@
 // range of numbers. The second argument is also a number representing the end of the desired range (inclusive).
 // If the second argument is omitted, then another function should be returned that expects that argument.
 
-function range(start: number) {
-  return function (end: number) {};
-}
-// TODO
+function range(start: number, end?: number) {
+  if (end === undefined) {
+    return function (end: number) {
+      const arr = [];
+      if (end < start) {
+        console.log([]);
+        return [];
+      }
 
-// range(3, 3); // [3]
-// range(3, 8); // [3, 4, 5, 6, 7, 8]
-// range(3, 0); // []
+      for (let i = start; i <= end; i++) {
+        arr.push(i);
+      }
+      console.log(arr);
+    };
+  } else {
+    const arr = [];
+    if (end && end < start) {
+      console.log("[]");
+      return [];
+    }
+    for (let i = start; i <= end; i++) {
+      arr.push(i);
+    }
+    console.log(arr);
+  }
+}
+
+range(3, 3); // [3]
+range(3, 8); // [3, 4, 5, 6, 7, 8]
+range(3, 0); // []
 
 var start3 = range(3);
 var start4 = range(4);
@@ -18,4 +40,4 @@ start3(3); // [3]
 start3(8); // [3, 4, 5, 6, 7, 8]
 start3(0); // []
 
-// start4(6); // [4, 5, 6]
+start4(6); // [4, 5, 6]
