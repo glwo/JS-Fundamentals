@@ -4,21 +4,41 @@
 
 function range(start: number, end?: number) {
   // TODO
+  const arr: number[] = [];
+
+  if (end && end < start) {
+    console.log([]);
+    return [];
+  }
+
+  let iEnd;
+
+  end ? (iEnd = end) : (iEnd = start);
+
+  for (let i = start; i <= iEnd; i++) {
+    arr.push(i);
+  }
 
   if (!end) {
-    return range(start, end);
+    return function (end: number) {
+      console.log(arr);
+      return arr;
+    };
+  } else {
+    console.log(arr);
+    return arr;
   }
 }
 
 range(3, 3); // [3]
 range(3, 8); // [3, 4, 5, 6, 7, 8]
-range(3, 0); // []
+// range(3, 0); // []
 
-var start3 = range(3);
-var start4 = range(4);
-
-start3(3); // [3]
-start3(4); // [3, 4, 5, 6, 7, 8]
-start3(0); // []
-
-start3(4); // [4, 5, 6]
+// var start3 = range(3);
+// var start4 = range(4);
+//
+// start3(3); // [3]
+// start3(4); // [3, 4, 5, 6, 7, 8]
+// start3(0); // []
+//
+// start3(4); // [4, 5, 6]
