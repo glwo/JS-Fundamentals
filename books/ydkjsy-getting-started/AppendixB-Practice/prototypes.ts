@@ -41,7 +41,7 @@ var slotMachine = {
   },
   display() {
     // TODO
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < this.reels.length; i++) {
       const line = `${this.reels[0].display()} | ${this.reels[1].display()} | ${this.reels[2].display()}`;
       console.log(line);
       this.spin();
