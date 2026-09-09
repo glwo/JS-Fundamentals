@@ -41,15 +41,11 @@ var slotMachine = {
   },
   display() {
     // TODO
-    this.reels.forEach(function display(reel) {
-      const first = reel.display();
-      reel.spin();
-      const second = reel.display();
-      reel.spin();
-      const third = reel.display();
-      reel.spin();
-      console.log(first + "|" + second + "|" + third);
-    });
+    for (let i = 0; i < 3; i++) {
+      const line = `${this.reels[0].display()} | ${this.reels[1].display()} | ${this.reels[2].display()}`;
+      console.log(line);
+      this.spin();
+    }
   },
 };
 
