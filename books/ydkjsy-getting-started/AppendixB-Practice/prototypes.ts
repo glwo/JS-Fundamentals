@@ -30,6 +30,9 @@ var slotMachine = {
   reels: [
     // this slot machine needs 3 separate reels
     // hint object.create(...)
+    Object.create(reel),
+    Object.create(reel),
+    Object.create(reel),
   ],
   spin() {
     this.reels.forEach(function spinReel(reel) {
@@ -38,6 +41,15 @@ var slotMachine = {
   },
   display() {
     // TODO
+    this.reels.forEach(function display(reel) {
+      const first = reel.display();
+      reel.spin();
+      const second = reel.display();
+      reel.spin();
+      const third = reel.display();
+      reel.spin();
+      console.log(first + "|" + second + "|" + third);
+    });
   },
 };
 
